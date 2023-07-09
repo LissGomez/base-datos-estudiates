@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudiantes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script src="models.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>ESTUDIANTE</h1>
+    <br>
+    <div class="row">
+      <div class="col">
+        <input id="txtNombre" type="text" class="form-control" placeholder="Primer Nombre" aria-label="First name">
+      </div>
+      <div class="col">
+        <input id="txtApellido" type="text" class="form-control" placeholder="Primer Apellido" aria-label="Last name">
+      </div>
+      <div class="col">
+        <input id="txtEdad" type="number" class="form-control" placeholder="Edad" aria-label="First name">
+      </div>
+    </div>
+    <br>
+
+    <h3>Materias y Calificaciones</h3>
+
+    <div class="input-group mb-3">
+      <div class="input-group-text">
+        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" id="chkMatematicas">
+        <label class="form-check-label ms-2" for="chkMatematicas">
+          Matemáticas
+        </label>
+      </div>
+      <input type="number" class="form-control" id="notaMatematicas" disabled aria-label="Text input with checkbox">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-text">
+        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" id="chkIdioma">
+        <label class="form-check-label ms-2" for="chkIdioma">
+          Idioma Español
+        </label>
+      </div>
+      <input type="number" class="form-control" id="notaIdioma" disabled aria-label="Text input with checkbox">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-text">
+        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" id="chkCiencias">
+        <label class="form-check-label ms-2" for="chkCiencias">
+          Ciencias Naturales
+        </label>
+      </div>
+      <input type="number" class="form-control" id="notaCiencias" disabled aria-label="Text input with checkbox">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-text">
+        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" id="chkSociales">
+        <label class="form-check-label ms-2" for="chkSociales">
+          Estudios Sociales
+        </label>
+      </div>
+      <input id="notaSociales" type="number" class="form-control" disabled aria-label="Text input with checkbox">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-text">
+        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" id="chkIngles">
+        <label class="form-check-label ms-2" for="chkIngles">
+          Inglés
+        </label>
+      </div>
+      <input id="notaIngles" type="number" class="form-control" disabled aria-label="Text input with checkbox">
+    </div>
+    <br>
+
+
+
+    <div class="vstack gap-2 col-md-5 mx-auto">
+      <button id="btnSave" type="button" class="btn btn-secondary">Guardar Cambios</button>
+      <button id="btnCancel" type="button" class="btn btn-outline-secondary">Cancelar</button>
+    </div>
+  </div>
+  <script src="student.js"></script>
+</body>
+
+</html>
